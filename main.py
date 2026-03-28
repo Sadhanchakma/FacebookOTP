@@ -164,7 +164,7 @@ async def menu_logic(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
                 if search == num or search in num:
                     await update.message.reply_text(
-                        f"🔍 FOUND\n\n📱 `{num}`\n🔐`{otp}`",
+                        f"🔍 FOUND\n\n📱 `{num}`\n🔐 `{otp}`",
  			parse_mode="Markdown"
                     )
                     found = True
@@ -197,3 +197,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+    
